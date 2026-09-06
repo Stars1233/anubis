@@ -65,7 +65,7 @@ Also I figured out pretty quickly that Rust builds some of the smallest WebAssem
 
 ### Finally fixing the challenge difficulty scaling issue
 
-Along the way this also lets me fix one of the bigger administrative problems with Anubis: challenges scale incorrectly with the `fast` challenge. Anubis uses string comparison to count the number of leading zero _nibbles_ in a hash instead of the number of leading zero _bits_. This means that adding one (1) to the difficulty of a challenge makes it 1024 (one thousand twenty-four) times as hard to solve in the worst case.
+Along the way this also lets me fix one of the bigger administrative problems with Anubis: challenges scale incorrectly with the `fast` challenge. Anubis uses string comparison to count the number of leading zero _nibbles_ in a hash instead of the number of leading zero _bits_. This means that adding one (1) to the difficulty of a challenge makes it 16 (sixteen) times as hard to solve in the worst case.
 
 Here's an interactive diagram to help you understand the difference in scaling at play:
 
